@@ -1,0 +1,100 @@
+/*
+ * tokens.css — Material Design 3 tokens for TagMark.
+ * Blue-green seed (#00695C teal) distinct from the extension's bookmark/tag
+ * identity. Tonal surface-container tiers give cards genuine "elevation via
+ * tint" depth instead of relying on borders alone.
+ */
+
+:root {
+  --font: 'Be Vietnam Pro', system-ui, -apple-system, sans-serif;
+
+  /* Light scheme */
+  --md-primary: #00695C;
+  --md-on-primary: #ffffff;
+  --md-primary-container: #A6F2E4;
+  --md-on-primary-container: #002019;
+  --md-secondary: #4A635D;
+  --md-on-secondary: #ffffff;
+  --md-secondary-container: #CCE8E0;
+  --md-on-secondary-container: #06201B;
+  --md-error: #BA1A1A;
+  --md-on-error: #ffffff;
+  --md-error-container: #FFDAD6;
+  --md-on-error-container: #410002;
+  --md-success: #1B6B35;
+  --md-success-container: #B7F0CC;
+
+  --md-surface: #F5FAF8;
+  --md-surface-variant: #DBE5E1;
+  --md-on-surface: #171D1B;
+  --md-on-surface-variant: #3F4946;
+  --md-outline: #6F7976;
+  --md-outline-variant: #BFC9C5;
+
+  --md-surface-container-lowest: #FFFFFF;
+  --md-surface-container-low: #EFF5F2;
+  --md-surface-container: #E9EFEC;
+  --md-surface-container-high: #E3EAE6;
+  --md-surface-container-highest: #DDE4E1;
+
+  --md-elevation-1: 0 1px 2px rgba(0,105,92,.10), 0 1px 3px 1px rgba(0,105,92,.08);
+  --md-elevation-2: 0 1px 2px rgba(0,105,92,.12), 0 2px 6px 2px rgba(0,105,92,.10);
+  --md-elevation-3: 0 4px 8px 3px rgba(0,105,92,.12), 0 1px 3px rgba(0,105,92,.12);
+
+  --md-radius-xs: 4px;
+  --md-radius-sm: 8px;
+  --md-radius-md: 12px;
+  --md-radius-lg: 16px;
+  --md-radius-xl: 24px;
+  --md-radius-full: 999px;
+
+  --md-state-hover: rgba(23,29,27,.08);
+  --md-state-pressed: rgba(23,29,27,.12);
+
+  --transition: 180ms cubic-bezier(.2,0,0,1);
+}
+
+[data-theme="dark"] {
+  --md-primary: #86D5C5;
+  --md-on-primary: #003730;
+  --md-primary-container: #005046;
+  --md-on-primary-container: #A6F2E4;
+  --md-secondary: #B0CCC4;
+  --md-on-secondary: #1B342E;
+  --md-secondary-container: #324B44;
+  --md-on-secondary-container: #CCE8E0;
+  --md-error: #FFB4AB;
+  --md-on-error: #690005;
+  --md-error-container: #93000A;
+  --md-on-error-container: #FFDAD6;
+  --md-success: #7DD9A2;
+  --md-success-container: #004F22;
+
+  --md-surface: #0E1513;
+  --md-surface-variant: #3F4946;
+  --md-on-surface: #DDE4E1;
+  --md-on-surface-variant: #BFC9C5;
+  --md-outline: #899793;
+  --md-outline-variant: #3F4946;
+
+  --md-surface-container-lowest: #090F0E;
+  --md-surface-container-low: #171D1B;
+  --md-surface-container: #1B211F;
+  --md-surface-container-high: #252B2A;
+  --md-surface-container-highest: #303634;
+
+  --md-elevation-1: 0 1px 2px rgba(0,0,0,.4), 0 1px 3px 1px rgba(0,0,0,.3);
+  --md-elevation-2: 0 1px 2px rgba(0,0,0,.45), 0 2px 6px 2px rgba(0,0,0,.3);
+  --md-elevation-3: 0 4px 8px 3px rgba(0,0,0,.4), 0 1px 3px rgba(0,0,0,.35);
+
+  --md-state-hover: rgba(221,228,225,.08);
+  --md-state-pressed: rgba(221,228,225,.12);
+}
+
+[data-fontsize="small"]  { --font-scale: .92; }
+[data-fontsize="medium"] { --font-scale: 1; }
+[data-fontsize="large"]  { --font-scale: 1.1; }
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --transition: 0ms; }
+}

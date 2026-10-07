@@ -1,0 +1,23 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6750A4"/>
+      <stop offset="1" stop-color="#4F378B"/>
+    </linearGradient>
+  </defs>
+  <!-- MD3 rounded-square container -->
+  <rect x="4" y="4" width="120" height="120" rx="32" fill="url(#bg)"/>
+  <!-- tonal inner surface -->
+  <rect x="14" y="14" width="100" height="100" rx="24" fill="#EADDFF" fill-opacity="0.14"/>
+
+  <!-- Big "A" (uppercase) -->
+  <path d="M40.5 78 L54 34 H64 L77.5 78 H68.2 L65.6 68.4 H52.4 L49.8 78 Z M54.6 60.2 H63.4 L59 44.3 Z"
+        fill="#FFFFFF"/>
+
+  <!-- small "a" (lowercase), overlapping bottom-right for the case-convert motif -->
+  <path d="M84.8 55.4 c-6.4 0-11 4.6-11 11.6 c0 7 4.4 11.6 10.4 11.6 c3.4 0 6-1.4 7.6-3.6 V78 h6.6 V56 h-6.6 v3 c-1.6-2.2-4.2-3.6-7-3.6 Z m1.6 5.6 c3.6 0 6 2.6 6 6 s-2.4 6-6 6 s-6-2.6-6-6 s2.4-6 6-6 Z"
+        fill="#FFFFFF" fill-opacity="0.92"/>
+
+  <!-- convert arrow accent -->
+  <path d="M30 92 h20 M45 87 l6 5 l-6 5" stroke="#D0BCFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

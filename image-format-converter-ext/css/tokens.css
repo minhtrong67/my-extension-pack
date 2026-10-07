@@ -1,0 +1,105 @@
+/*
+ * tokens.css — Material Design 3 tokens for PixFlip.
+ * Seeded from a warm orange (#8B5000 / #FF9142), matching the extension's
+ * icon and evoking creative/media tooling. Full tonal surface-container
+ * system for both themes, consistent with the rest of the M3 refresh.
+ */
+
+:root {
+  --font: 'Be Vietnam Pro', system-ui, -apple-system, sans-serif;
+
+  /* ---- Light scheme ---- */
+  --md-primary: #8B5000;
+  --md-on-primary: #ffffff;
+  --md-primary-container: #FFDDB3;
+  --md-on-primary-container: #2C1600;
+
+  --md-secondary: #715A3B;
+  --md-on-secondary: #ffffff;
+  --md-secondary-container: #FDDEB6;
+  --md-on-secondary-container: #271905;
+
+  --md-error: #BA1A1A;
+  --md-on-error: #ffffff;
+  --md-error-container: #FFDAD6;
+  --md-on-error-container: #410002;
+
+  --md-success: #1B6B35;
+  --md-success-container: #C4F0D2;
+
+  --md-surface: #FFFBFF;
+  --md-on-surface: #201A17;
+  --md-on-surface-variant: #52443A;
+  --md-outline: #847469;
+  --md-outline-variant: #D6C3B6;
+
+  --md-surface-container-lowest: #FFFFFF;
+  --md-surface-container-low: #FBF1E9;
+  --md-surface-container: #F5EBE3;
+  --md-surface-container-high: #EFE5DD;
+  --md-surface-container-highest: #EAE0D8;
+
+  --md-elevation-1: 0 1px 2px rgba(139,80,0,.10), 0 1px 3px 1px rgba(139,80,0,.08);
+  --md-elevation-2: 0 1px 2px rgba(139,80,0,.12), 0 2px 6px 2px rgba(139,80,0,.10);
+  --md-elevation-3: 0 4px 8px 3px rgba(139,80,0,.12), 0 1px 3px rgba(139,80,0,.12);
+
+  --md-radius-xs: 6px;
+  --md-radius-sm: 10px;
+  --md-radius-md: 16px;
+  --md-radius-lg: 22px;
+  --md-radius-full: 999px;
+
+  --md-state-hover: rgba(32,26,23,.08);
+  --md-state-pressed: rgba(32,26,23,.12);
+
+  --transition: 180ms cubic-bezier(.2,0,0,1);
+  --font-scale: 1;
+}
+
+/* ---- Dark scheme ---- */
+[data-theme="dark"] {
+  --md-primary: #FFB871;
+  --md-on-primary: #4A2900;
+  --md-primary-container: #6B3C00;
+  --md-on-primary-container: #FFDDB3;
+
+  --md-secondary: #E0C29B;
+  --md-on-secondary: #3F2D15;
+  --md-secondary-container: #58432A;
+  --md-on-secondary-container: #FDDEB6;
+
+  --md-error: #FFB4AB;
+  --md-on-error: #690005;
+  --md-error-container: #93000A;
+  --md-on-error-container: #FFDAD6;
+
+  --md-success: #9CD6AC;
+  --md-success-container: #0B4A22;
+
+  --md-surface: #18120E;
+  --md-on-surface: #EAE0D8;
+  --md-on-surface-variant: #D6C3B6;
+  --md-outline: #9F8D80;
+  --md-outline-variant: #52443A;
+
+  --md-surface-container-lowest: #120D0A;
+  --md-surface-container-low: #201A17;
+  --md-surface-container: #241E1A;
+  --md-surface-container-high: #2F2824;
+  --md-surface-container-highest: #3A322D;
+
+  --md-elevation-1: 0 1px 2px rgba(0,0,0,.4), 0 1px 3px 1px rgba(0,0,0,.3);
+  --md-elevation-2: 0 1px 2px rgba(0,0,0,.45), 0 2px 6px 2px rgba(0,0,0,.3);
+  --md-elevation-3: 0 4px 8px 3px rgba(0,0,0,.4), 0 1px 3px rgba(0,0,0,.35);
+
+  --md-state-hover: rgba(234,224,216,.08);
+  --md-state-pressed: rgba(234,224,216,.12);
+}
+
+[data-fontsize="small"]  { --font-scale: .92; }
+[data-fontsize="medium"] { --font-scale: 1; }
+[data-fontsize="large"]  { --font-scale: 1.1; }
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --transition: 0ms; }
+}

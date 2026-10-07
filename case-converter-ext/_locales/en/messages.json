@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "Case Converter — Material Design 3",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Convert text case anywhere on the web with customizable shortcuts. Material Design 3 UI, light/dark theme, English & Vietnamese.",
+    "description": "Extension description"
+  }
+}
